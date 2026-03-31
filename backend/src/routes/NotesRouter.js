@@ -1,8 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const { signup, signin } = require("../controllers/userController");
 
-router.post("/signup", signup);
-router.post("/signin", signin);
+// temporary route
+router.get("/", (req, res) => {
+    res.send("Notes working");
+});
 
 module.exports = router;
