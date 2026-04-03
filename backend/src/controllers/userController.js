@@ -4,7 +4,6 @@ const jwt = require("jsonwebtoken");
 
 const SECRET_KEY = "secretkey";
 
-
 const signup = async (req, res) => {
     const { username, email, password } = req.body;
 
