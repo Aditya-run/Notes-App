@@ -1,14 +1,14 @@
 const express = require("express");
 const router = express.Router();
 
-const auth = require("../middleware/authMiddleware");
+const auth = require("../middleware/auth.js");
 
 const {
     createNote,
     getNotes,
     updateNote,
     deleteNote
-} = require("../controllers/noteController");
+} = require("../controllers/notesController");
 
 // CREATE
 router.post("/add", auth, createNote);
